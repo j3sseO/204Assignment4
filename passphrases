@@ -1,0 +1,33 @@
+Step 1
+------
+
+A: Passphrase for ca-private.pem:
+hardpassword
+
+
+B: Password for ca-cert.jks:
+compx204
+
+
+C: The CA's certificate fingerprint (SHA256) in ca-cert.jks:
+0E:2B:23:DF:72:58:F9:05:72:5B:39:E9:0C:90:49:A1:FC:FC:95:10:ED:4E:A6:94:EE:60:25:94:DA:89:C4:E9
+
+Step 2
+------
+
+D: Passphrase for server.jks:
+difficultpassword
+
+
+E: The CA's certificate fingerprint (SHA256) in server.jks:
+78:F0:67:E4:EC:8B:12:0E:73:86:A7:D8:50:18:06:39:F0:58:D1:78:E8:A2:95:92:EF:7E:7B:6C:92:4B:0F:5E
+
+
+Step 4
+------
+
+F: The exception from the first command:
+javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+
+G: The exception from the second command:
+
